@@ -7,6 +7,10 @@ public class Principal extends javax.swing.JFrame {
 
     static String nombreA;
 
+    public void enableVerCocina(boolean enabled) {
+    verCocina.setEnabled(enabled);
+}
+    
     public Principal() {
         initComponents();
         setLocationRelativeTo(null);
@@ -72,7 +76,7 @@ public class Principal extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Principale.jpg"))); // NOI18N
         jLabel1.setText("jLabel1");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(0, -10, 530, 400);
+        jLabel1.setBounds(0, -20, 530, 420);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -94,14 +98,41 @@ public class Principal extends javax.swing.JFrame {
 
         if ((nom.equals("Administrador")) && (pass.equals("admin123"))) {
             nombreA = "Administrador";
+            Opciones op = new Opciones();
+            op.setVisible(true);
+            op.setLocationRelativeTo(null);
+            this.dispose();
+            
         } else if ((nom.equals("Yurany")) && (pass.equals("123456"))) {
             nombreA = "Yurany";
+            Opciones op = new Opciones();
+            op.setVisible(true);
+            op.setLocationRelativeTo(null);
+            this.dispose();
+            
+            
         } else if ((nom.equals("Miguel")) && (pass.equals("miguel"))) {
             nombreA = "Miguel";
+            Opciones op = new Opciones();
+            op.setVisible(true);
+            op.setLocationRelativeTo(null);
+            this.dispose();
+            
+            
         } else if ((nom.equals("Profesor")) && (pass.equals("poli01"))) {
             nombreA = "Profesor";
+            Opciones op = new Opciones();
+            op.setVisible(true);
+            op.setLocationRelativeTo(null);
+            this.dispose();
+
         } else if ((nom.equals("Rosa")) && (pass.equals("rosa"))) {
-                nombreA = "Rosa";
+            nombreA = "Rosa";
+            Opciones op = new Opciones();
+            op.setVisible(true);
+            op.setLocationRelativeTo(null);
+            this.dispose(); 
+         
         } else {
                 JOptionPane.showMessageDialog(null, "Datos incorrectos, verifique nuevamente.");
             } 
@@ -153,4 +184,14 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField passwordUser;
     // End of variables declaration//GEN-END:variables
+
+    private static class verCocina {
+
+        private static void setEnabled(boolean enabled) {
+            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
+
+        public verCocina() {
+        }
+    }
 }
