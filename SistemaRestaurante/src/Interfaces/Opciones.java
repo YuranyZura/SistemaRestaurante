@@ -2,6 +2,7 @@
 package Interfaces;
 
 import Uml.Factura;
+import java.awt.event.ItemEvent;
 import java.awt.event.KeyEvent;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -1574,7 +1575,10 @@ int contador = 0;
             imagen.setIcon(icono);
         }
     }//GEN-LAST:event_tiposBebidasActionPerformed
-
+        void actualizarImagen() {
+        tiposBebidas.addItemListener((ItemEvent arg0) -> {
+        });
+    }
     private void btn_TerminarOrdenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_TerminarOrdenActionPerformed
     //Añadir platos pedidos en menu a tabla pedidos        
     // Comprobar si es mayor que 0 para agregarlos a tabla de pedido
