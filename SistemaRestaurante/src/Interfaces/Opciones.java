@@ -29,7 +29,7 @@ public class Opciones extends javax.swing.JFrame {
     private JScrollPane jScrollPane5;
 
     public Opciones() {
-        //HILO CRONOMETRO
+        //Hilo cronometro
         this.cronometro = new Thread() {
             @Override
             public void run() {
